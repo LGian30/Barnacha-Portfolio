@@ -1,6 +1,5 @@
 import usePageTitle from "../hooks/usePageTitle.js";
 
-// Full class names are written out so Tailwind can find them.
 const groups = [
   { title: "Front end", tone: "bg-cyan/12 text-cyan", items: ["HTML & CSS", "JavaScript", "React", "Tailwind CSS"] },
   { title: "Databases", tone: "bg-purple/15 text-purple", items: ["MongoDB", "MySQL"] },
