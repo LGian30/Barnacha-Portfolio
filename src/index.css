@@ -32,6 +32,19 @@
 }
 
 @layer components {
+  /* Page rhythm: every page is a .page with a title block, then content, spaced the same */
+  .page { @apply space-y-8; }
+  .page-title { @apply text-3xl font-bold leading-tight sm:text-4xl; }
+  .section-title { @apply text-xl font-semibold sm:text-2xl; }
+  .card-title { @apply text-lg font-semibold; }
+  .body-text { @apply max-w-prose text-muted; }
+
+  /* Surfaces, links, tags */
+  .card { @apply min-w-0 rounded-2xl border border-line bg-panel p-4; }
+  .link { @apply text-cyan underline; }
+  .tag { @apply rounded-full px-3 py-1 font-mono text-sm font-semibold; }
+
+  /* Buttons */
   .btn {
     @apply inline-flex min-h-11 items-center justify-center rounded-xl px-5 py-2.5 font-semibold no-underline transition;
   }
