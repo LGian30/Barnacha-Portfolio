@@ -9,13 +9,11 @@ import NotFound from "./pages/NotFound.jsx";
 export default function App() {
   return (
     <Routes>
-      {/* Layout is the parent route; each page renders inside its <Outlet /> */}
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        {/* Any other URL */}
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
