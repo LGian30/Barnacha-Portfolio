@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
-/* Design tokens: use as bg-canvas, bg-panel, text-ink, text-muted, text-cyan, border-line ... */
 @theme {
   --color-canvas: #070b16;
   --color-panel: #0d1326;
   --color-panel2: #111a33;
   --color-line: #1c2542;
   --color-ink: #f1f4fb;
-  --color-muted: #9aa4c0; /* 7.5:1 on canvas, 6.9:1 on panel */
+  --color-muted: #9aa4c0;
   --color-cyan: #00d4ff;
   --color-purple: #a78bfa;
   --color-green: #10e5a0;
@@ -26,25 +25,21 @@
     font-family: var(--font-sans);
     line-height: 1.6;
   }
-  /* Visible keyboard focus on everything interactive */
   :focus-visible { outline: 3px solid var(--color-cyan); outline-offset: 2px; }
   a { text-underline-offset: 4px; }
 }
 
 @layer components {
-  /* Page rhythm: every page is a .page with a title block, then content, spaced the same */
   .page { @apply space-y-8; }
   .page-title { @apply text-3xl font-bold leading-tight sm:text-4xl; }
   .section-title { @apply text-xl font-semibold sm:text-2xl; }
   .card-title { @apply text-lg font-semibold; }
   .body-text { @apply max-w-prose text-muted; }
 
-  /* Surfaces, links, tags */
   .card { @apply min-w-0 rounded-2xl border border-line bg-panel p-4; }
   .link { @apply text-cyan underline; }
   .tag { @apply rounded-full px-3 py-1 font-mono text-sm font-semibold; }
 
-  /* Buttons */
   .btn {
     @apply inline-flex min-h-11 items-center justify-center rounded-xl px-5 py-2.5 font-semibold no-underline transition;
   }
