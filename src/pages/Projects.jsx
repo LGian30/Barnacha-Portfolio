@@ -2,7 +2,7 @@ const project = {
   title: "PROFIT Fitness Tracker",
   description: "Tracks workouts and generates AI-powered training plans.",
   image: "/images/project1.png",
-  link: "https://github.com/your-username/profit",
+  link: "https://github.com/LGian30/profit",
 };
 
 export default function Projects() {
