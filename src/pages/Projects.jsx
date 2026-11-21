@@ -6,7 +6,7 @@ const projects = [
     description: "Tracks workouts and generates AI-powered training plans.",
     image: "/images/project1.png",
     alt: "PROFIT dashboard showing an AI-generated sports performance workout plan with exercises, sets and reps",
-    link: "https://github.com/your-username/profit",
+    link: "https://github.com/LGian30/profit",
   },
 ];
 
